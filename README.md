@@ -15,7 +15,7 @@ AI Share Links allows your readers to easily share your content with popular AI 
 - **Custom Prompts**: Customize what prompt is sent to AI platforms
 
 ### Design & Customization
-- **7 Color Schemes**: Ocean Breeze (default), Sunset Vibes, Forest Mystique, Sea Breeze, Cosmic Dreams, Brand Blue, and Brand Transparent
+- **9 Color Schemes**: Ocean Breeze (default), Sunset Vibes, Forest Mystique, Sea Breeze, Cosmic Dreams, Navy Light, Transparent, Solid Navy, and Midnight Aurora
 - **Icon Options**: Choose between emoji icons, brand logos, or no icons
 - **Flexible Positioning**: Display buttons at top, bottom, or both positions on posts
 - **Responsive Design**: Mobile-friendly button layout
@@ -63,7 +63,7 @@ Examples:
 
 ### Design Settings
 
-**Color Scheme**: Choose from 7 pre-designed color schemes with gradient backgrounds and transparent options
+**Color Scheme**: Choose from 9 carefully designed color schemes including gradients, solid colors, and transparent options optimized for any background
 
 **Button Icons**: 
 - No Icons: Text-only buttons
@@ -116,14 +116,16 @@ You can customize this to:
 - Direct the AI's focus to particular aspects
 
 ### Color Schemes
-Choose from 7 carefully designed color schemes:
-- **Ocean Breeze**: Cool blue to purple gradient
-- **Sunset Vibes**: Warm pink to coral gradient  
-- **Forest Mystique**: Deep teal to sage green gradient
-- **Sea Breeze**: Aqua mint to soft pink gradient
-- **Cosmic Dreams**: Brown to purple to gold gradient
-- **Brand Blue**: Deep navy to bright blue gradient - bold and professional brand colors
-- **Brand Transparent**: Minimal transparent style - adapts to any background without clashing
+Choose from 9 carefully designed color schemes:
+- **Ocean Breeze**: Cool blue to purple gradient - professional and calming
+- **Sunset Vibes**: Warm pink to coral gradient - vibrant and energetic
+- **Forest Mystique**: Deep teal to sage green gradient - natural and sophisticated
+- **Sea Breeze**: Aqua mint to soft pink gradient - fresh and modern
+- **Cosmic Dreams**: Brown to purple to gold gradient - mysterious and luxurious
+- **Navy Light**: Deep navy to bright blue gradient - bold and professional brand colors
+- **Transparent**: Minimal transparent style with navy border - adapts to any background without clashing
+- **Solid Navy**: Solid deep navy blue - clean and authoritative
+- **Midnight Aurora**: Deep navy to electric cyan gradient - striking and futuristic
 
 ### Hook Integration
 Developers can customize the plugin using WordPress hooks:
@@ -136,12 +138,33 @@ add_filter('ai_share_links_platforms', 'custom_ai_platforms');
 add_filter('ai_share_links_color_schemes', 'custom_color_schemes');
 ```
 
+## Compatibility
+
+### Performance Optimization Plugins
+AI Share Links is fully compatible with popular optimization plugins:
+- ✅ **Perfmatters** - Works with "Remove Global Styles" and "Separate Block Styles" enabled
+- ✅ **WP Rocket** - Compatible with block CSS removal and optimization features
+- ✅ **Autoptimize** - CSS and JS optimization supported
+- ✅ **Asset CleanUp** - Works with disabled WordPress core styles
+
+The plugin uses direct CSS injection to `wp_head` rather than depending on WordPress block library styles, ensuring buttons render correctly even when core block styles are disabled for performance.
+
 ## Requirements
 
 - WordPress 5.0 or higher
 - PHP 7.4 or higher
 
 ## Version History
+
+### Version 1.1.2
+- Added Solid Navy color scheme for clean, solid brand color appearance
+- Added Midnight Aurora color scheme with navy to cyan gradient for modern tech look
+- Renamed "Brand Blue" to "Navy Light" for clarity
+- Renamed "Brand Transparent" to "Transparent" for simplicity
+- Fixed CSS loading issue with optimization plugins (Perfmatters, WP Rocket, etc.)
+- Changed CSS delivery method to direct wp_head injection for better compatibility
+- Now works with "Remove Global Styles" and block library optimizations enabled
+- Total of 9 color schemes available
 
 ### Version 1.1.1
 - Added Brand Blue color scheme for professional branded appearance
