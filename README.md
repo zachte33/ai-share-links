@@ -15,7 +15,7 @@ AI Share Links allows your readers to easily share your content with popular AI 
 - **Custom Prompts**: Customize what prompt is sent to AI platforms
 
 ### Design & Customization
-- **5 Color Schemes**: Ocean Breeze (default), Sunset Vibes, Forest Mystique, Sea Breeze, and Cosmic Dreams
+- **7 Color Schemes**: Ocean Breeze (default), Sunset Vibes, Forest Mystique, Sea Breeze, Cosmic Dreams, Brand Blue, and Brand Transparent
 - **Icon Options**: Choose between emoji icons, brand logos, or no icons
 - **Flexible Positioning**: Display buttons at top, bottom, or both positions on posts
 - **Responsive Design**: Mobile-friendly button layout
@@ -63,7 +63,7 @@ Examples:
 
 ### Design Settings
 
-**Color Scheme**: Choose from 5 pre-designed color schemes with gradient backgrounds
+**Color Scheme**: Choose from 7 pre-designed color schemes with gradient backgrounds and transparent options
 
 **Button Icons**: 
 - No Icons: Text-only buttons
@@ -116,12 +116,14 @@ You can customize this to:
 - Direct the AI's focus to particular aspects
 
 ### Color Schemes
-Choose from 5 carefully designed color schemes:
+Choose from 7 carefully designed color schemes:
 - **Ocean Breeze**: Cool blue to purple gradient
 - **Sunset Vibes**: Warm pink to coral gradient  
 - **Forest Mystique**: Deep teal to sage green gradient
 - **Sea Breeze**: Aqua mint to soft pink gradient
 - **Cosmic Dreams**: Brown to purple to gold gradient
+- **Brand Blue**: Deep navy to bright blue gradient - bold and professional brand colors
+- **Brand Transparent**: Minimal transparent style - adapts to any background without clashing
 
 ### Hook Integration
 Developers can customize the plugin using WordPress hooks:
@@ -140,6 +142,11 @@ add_filter('ai_share_links_color_schemes', 'custom_color_schemes');
 - PHP 7.4 or higher
 
 ## Version History
+
+### Version 1.1.1
+- Added Brand Blue color scheme for professional branded appearance
+- Added Brand Transparent color scheme for universal compatibility
+- Enhanced color scheme options to 7 total schemes
 
 ### Version 1.1.0
 - Added page slug support for custom page placement
